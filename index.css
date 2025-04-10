@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-
+  
 body {
     display: flex;
     justify-content: center;
@@ -18,64 +18,103 @@ body {
     height: 90vh;
     background-color: #1C1B1F;
     width: 400px;
-    border-radius:7%;
+    border-radius:30px;
     flex-direction: column;
     overflow: hidden;
-    align-items: center; 
-}
+    align-items: center;
+  }
 
 .eins{
-width: 400px;
-height: 35px;
-border-radius: 10px;
-background-color:#FFFFFF;
-margin-top: 40px;
-}
-.zwei{
-    
-background-color: #FFA8D2;
-   
-}
-.drei{
-   
-background-color: #E077E2;
-  
-}
-.vier{
-  
-background-color: #AD94E8;
- 
+    width: 390px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:#FFFFFF;
+    margin-top: 40px;
 
 }
-.fünf{
-   
-background-color: #5293F4;
-   
+
+i.fa {
+    font-size: 20px;
+    color: #000000;
+    transition: all 0.3s ease;
+    margin: 10px;
 }
+
+i.fa-battery-quarter {
+    color: #9F2626;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.Uhrzeit{
+  font-family: 'Inter', sans-serif;
+}
+
 h1{
-color:#FFFFFF;
-font-style: bold;
-font-size: 40px;
-font-family: 'Inter', sans-serif;
-font-weight: bolder;  
-margin-bottom: 90px;
-padding: 20px;
+  color:#FFFFFF;
+  font-style: bold;
+  font-size: 40px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bolder;  
+  margin-bottom: 90px;
+  padding: 20px;
+  }
+
+.myButton,.m1,.m2,.m3 {
+  color: rgb(3, 3, 3);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 380px;
+  height: 80px;
+  margin-bottom: 20px;
+  padding: 15px;
+  text-align:left;
+  font-family: 'Inter', sans-serif; 
 }
 
-.zwei, .drei, .vier, .fünf {
-width: 380px;
-height: 80px;
-margin-bottom: 20px;
-padding: 15px;
-text-align:left;
-border-radius:8px;
+.m1{
+background-color: #E077E2;
+}
+.myButton{
+background-color: #FFA8D2;
+}
+.m2{
+background-color: #AD94E8;
+}
+.m3{
+background-color: #5293F4;  
 }
 
-.footer{
+.footer {
     width: 400px;
-    height: 35px;
+    height: 55px;
     border-radius: 6px;
     background-color:#0F0E0E;
-    margin-top: 150px;
+    margin-top: 155px;
     border: 2px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.footer2  {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  gap: 20px;
+ }
+ .footer2 i:hover {
+  color: #FFFFFF;
+  transform: scale(1.2);
+}
+
+
