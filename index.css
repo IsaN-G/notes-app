@@ -11,6 +11,8 @@ body {
     height: 100vh;
     background-color: #D9D9D9;
     text-align: center;
+    flex-direction: column;
+   
   }
 
 .handy{
@@ -22,6 +24,8 @@ body {
     flex-direction: column;
     overflow: hidden;
     align-items: center;
+    justify-content: flex-start; 
+    position: relative;
   }
 
 .eins{
@@ -44,7 +48,7 @@ i.fa-battery-quarter {
     color: #9F2626;
 }
 
-.header {
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,7 +59,7 @@ i.fa-battery-quarter {
   font-family: 'Inter', sans-serif;
 }
 
-h1{
+h1 {
   color:#FFFFFF;
   font-style: bold;
   font-size: 40px;
@@ -92,29 +96,83 @@ background-color: #AD94E8;
 background-color: #5293F4;  
 }
 
-.footer {
-    width: 400px;
+.container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  align-items: center;
+  height: 100%; 
+  width: 100%;
+ }
+
+.c1,.c2,.c3,.c4,.c5 {
+  width:118px;
+  height: 59px;
+  border-radius: 8px;
+  background-color:#FFFFFF;
+  margin-top: 40px;
+  padding-top: 70px;
+  text-align:center;
+  }
+
+  
+  .footer {
+    width: 100%;
     height: 55px;
     border-radius: 6px;
-    background-color:#0F0E0E;
-    margin-top: 155px;
+    background-color: #0F0E0E;
+    position: relative; 
+    bottom: 0;
+    left: 0;
     border: 2px solid #FFFFFF;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
-.footer2  {
-  color: #FFFFFF;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
-  gap: 20px;
- }
+    padding: 10px;
+    margin-top: 20px; 
+  }
+
+  .footer2  {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    gap: 20px;
+  }
+
  .footer2 i:hover {
   color: #FFFFFF;
   transform: scale(1.2);
 }
 
+.neuerto {
+  width: 328px;
+  height: 35px;
+  padding: 8px;
+  background-color: #E077E2;
+  color: #FFFFFF;
+  border-color:#000000;
+  font-size: 18px;
+  margin-bottom: 20px;
+  cursor: pointer;
 
+}
+
+
+.search {
+  width: 328px;
+  height: 35px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #E077E2;
+ 
+}
+.Hinzufügen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: auto; 
+}
